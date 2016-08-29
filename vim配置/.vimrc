@@ -18,7 +18,7 @@ set t_Co=256
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
 set cursorline
-hi CursorLine   cterm=underline gui=underline
+hi CursorLine   cterm=NONE gui=NONE ctermbg=darkgray
 set cursorcolumn
 hi CursorColumn cterm=NONE
 
@@ -79,7 +79,7 @@ Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 	" 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突
 "Plugin 'ascenator/L9', {'name': 'newL9'}
-
+Plugin 'https://github.com/lmns1314HuHu/nerdtree.git'
 "=====================================airline========================
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes' 
@@ -112,6 +112,14 @@ filetype plugin indent on    " 必须 加载vim自带和插件相应的语法和
 	"
 	" 查阅 :h vundle 获取更多细节和wiki以及FAQ
 	" 将你自己对非插件片段放在这行之后
+
+"==========================NERDTree config==========================
+map <F2> :NERDTreeToggle<CR>
+imap <F2> <Esc>:NERDTreeToggle<CR>
+vmap <F2> <Esc>:NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
+"autocmd vimenter * NERDTree "开启vim自动加载nerdtree
+"--------------------------End NerdTree config----------------------"
 
 
 autocmd BufNewFile *.cpp exec ":call SetTitle()"
