@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.jianshu.com/p/9a5c4cb0452d -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script type="text/javascript" src="./Ubuntu 下安装oh-my-zsh - 简书_files/1255494d3a"></script><script src="./Ubuntu 下安装oh-my-zsh - 简书_files/nr-974.min.js"></script><script type="text/javascript" async="" src="./Ubuntu 下安装oh-my-zsh - 简书_files/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1255494d3a","applicationID":"15702971","transactionName":"e1daR0JWVV9RER9ZWkxdRxxDUVZE","queueTime":4,"applicationTime":85,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="description" content="默认状况下Termial样式Ubuntu系统默认状况下的终端样式如下：Ubuntudefaultterminal&#39;sstyle有个知名的神奇：Oh-My-Zsh可以让终端及美观又实用：Oh-My-Zshagnosterthemeinstallpowerlinefont今天就一步步的记录我安装OhMyZsh的过程安装Oh-My-Zsh安装Oh-My-Zsh之前必须安装zsh，否则会收到如下提示：Zshisnotinstalled!Pleaseinstallzshfirst!...">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4">
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI">
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/9a5c4cb0452d">
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/2961674">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="Ubuntu 下安装oh-my-zsh" property="twitter:title">
+  <meta content="默认状况下Termial样式Ubuntu系统默认状况下的终端样式如下：Ubuntudefaultterminal&#39;sstyle有个知名的神奇：Oh-My-Zsh可以让终端及美观又实用：Oh-My-Zshagnosterthemeinstallpowerlinefont今天就一步步的记录我安装OhMyZsh的过程安装Oh-My-Zsh安装Oh-My-Zsh之前必须安装zsh，否则会收到如下提示：Zshisnotinstalled!Pleaseinstallzshfirst!..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/9a5c4cb0452d" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="Ubuntu 下安装oh-my-zsh">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/9a5c4cb0452d">
+  <meta property="og:description" content="默认状况下Termial样式Ubuntu系统默认状况下的终端样式如下：Ubuntudefaultterminal&#39;sstyle有个知名的神奇：Oh-My-Zsh可以让终端及美观又实用：Oh-My...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/2961674">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/2961674">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+  <title>Ubuntu 下安装oh-my-zsh - 简书</title>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="2NDB+84UShHx0c1+SEDimAylbwGj6nXzg/Ana0tgYzDlHRrP/r3+MRDKPZhmDRZl6hccBRwzTQ2JUd1QBjT66g==">
+  <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" media="all" href="./Ubuntu 下安装oh-my-zsh - 简书_files/base-28859e35d389885d08837bc971ff742c.css">
+
+    <link rel="stylesheet" media="all" href="./Ubuntu 下安装oh-my-zsh - 简书_files/reading-note-cc35f3caf1b79498ea4800b856bcf8a6.css">
+  <link rel="stylesheet" media="all" href="./Ubuntu 下安装oh-my-zsh - 简书_files/base-read-mode-64acccf6966299cfa3d580140a2582fe.css">
+  <script src="./Ubuntu 下安装oh-my-zsh - 简书_files/modernizr-613ea63b5aa2f0e2a1946e9c28c8eedb.js"></script>
+  <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+  <!--[if IE 8]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <!--[if lt IE 9]><link rel="stylesheet" media="all" href="http://cdn-qn0.jianshu.io/assets/scaffolding/for_ie-7f1c477ffedc13c11315103e8787dc6c.css" /><![endif]-->
+  <link href="http://baijii-common.b0.upaiyun.com/icons/favicon.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/57-b426758a1fcfb30486f20fd073c3b8ec.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/72-feca4b183b9d29fd188665785dc7a7f1.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/76-ba757f1ad3421192ce7192170393d2b0.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="./Ubuntu 下安装oh-my-zsh - 简书_files/114-8dae53b3bcea3f06bb139e329d1edab3.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/120-fa315ee0177dba4c55d4f66d4129b47f.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/152-052f5799bec8fb3aa624bdc72ef5bd1d.png" sizes="152x152">
+
+<style type="text/css"></style></head>
+
+<body class="post output zh cn linux reader-day-mode reader-font2" data-js-module="note-show" data-locale="zh-CN">
+  
+  <div class="navbar navbar-jianshu shrink">
+  <div class="dropdown">
+    <a class="dropdown-toggle logo" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="javascript:void(0)">
+      简
+    </a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+      <li><a href="http://www.jianshu.com/"><i class="fa fa-home"></i> 首页</a></li>
+      <li><a href="http://www.jianshu.com/collections"><i class="fa fa-th"></i> 专题</a></li>
+      <li><a href="http://www.jianshu.com/user_invitations"><i class="fa fa-money"></i> 发钱啦</a></li>
+    </ul>
+  </div>
+</div>
+<div class="navbar-user">
+    <a class="login" data-signup-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_up">
+      <i class="fa fa-user"></i> 注册
+</a>    <a class="login" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+      <i class="fa fa-sign-in"></i> 登录
+</a>    <a class="daytime set-view-mode pull-right" href="javascript:void(0)"><i class="fa fa-moon-o"></i></a>
+</div>
+<div class="navbar navbar-jianshu expanded">
+  <div class="dropdown">
+      <a class="active logo" role="button" data-original-title="个人主页" data-container="div.expanded" href="http://www.jianshu.com/">
+        <b>简</b><i class="fa fa-home"></i><span class="title">首页</span>
+</a>      <a data-toggle="tooltip" data-placement="right" data-original-title="专题" data-container="div.expanded" href="http://www.jianshu.com/collections">
+        <i class="fa fa-th"></i><span class="title">专题</span>
+</a>    <a class="ad-selector" href="http://www.jianshu.com/apps">
+      <i class="fa fa-mobile"></i><span class="title">下载手机应用</span>
+</a>    <div class="ad-container ">
+      <div class="ad-pop">
+        <img class="ad-logo" src="./Ubuntu 下安装oh-my-zsh - 简书_files/114-8dae53b3bcea3f06bb139e329d1edab3.png" alt="114">
+        <p class="ad-title">简书</p>
+        <p class="ad-subtitle">交流故事，沟通想法</p>
+        <img class="ad-qrcode" src="./Ubuntu 下安装oh-my-zsh - 简书_files/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode">
+        <div>
+          <a class="ad-link" href="https://itunes.apple.com/cn/app/jian-shu/id888237539?ls=1&amp;mt=8">iOS</a>·
+          <a class="ad-link" href="http://downloads.jianshu.io/apps/haruki/JianShu-1.11.1.apk">Android</a>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="nav-user">
+      <a href="http://www.jianshu.com/p/9a5c4cb0452d#view-mode-modal" data-toggle="modal"><i class="fa fa-font"></i><span class="title">显示模式</span></a>
+
+      <a class="signin" data-signin-link="true" data-toggle="modal" data-placement="right" data-original-title="登录" data-container="div.expanded" href="http://www.jianshu.com/sign_in">
+        <i class="fa fa-sign-in"></i><span class="title">登录</span>
+</a>    </div>
+  </div>
+
+  
+    <div class="fixed-btn">
+    <a class="go-top" href="http://www.jianshu.com/p/9a5c4cb0452d#"> <i class="fa fa-angle-up"></i></a>
+    <a class="qrcode" data-target="#bottom-qrcode" data-toggle="modal" href="javascript:void(0)"><i class="fa fa-qrcode"></i></a>
+    <a class="writer" href="http://www.jianshu.com/writer#/" data-toggle="tooltip" data-placement="left" title="" data-original-title="写篇文章"><i class="fa fa-pencil"></i></a>
+    <!-- qrcode modal -->
+    <div id="bottom-qrcode" class="modal panel-modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <h4>下载简书移动应用</h4>
+      <div class="panel-body"><img src="./Ubuntu 下安装oh-my-zsh - 简书_files/download-app-qrcode-053849fa25f9b44573ef8dd3c118a20f.png" alt="Download app qrcode"></div>
+    </div>
+  </div>
+
+
+  <div id="show-note-container" class="imagebubble-container imagebubble-mode-off">
+    
+<div class="post-bg" id="flag">
+  <div class="wrap-btn" style="top: -1px;">
+    <!-- Notebook and collections button upper left -->
+      <div class="article-related pull-left">
+          <a data-toggle="tooltip" data-placement="bottom" data-original-title="未加入专题" href="javascript:void(null);">
+            <i class="fa fa-th"></i>
+</a>          <a class="notebooks-menu-btn" data-toggle="modal" data-target="#notebooks-menu" href="javascript:void(null);"><i class="fa fa-list-ul"></i></a>
+        <div class="related-avatar-group activities"></div>
+      </div>
+    <!-- ******* -->
+
+      <a class="login" data-signup-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_up">
+    <i class="fa fa-user"></i> 注册
+</a>  <a class="login" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+    <i class="fa fa-sign-in"></i> 登录
+</a>
+
+    <!-- Buttons upper right -->
+    <!-- ******* -->
+  </div>
+
+  <div class="container">
+    <!-- Article activities for width under 768px -->
+    <div class="related-avatar-group activities"></div>
+      <div class="article">
+        <div class="preview">
+          <div class="author-info">
+              <div class="btn btn-small btn-success follow">
+    <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"><i class="fa fa-plus"></i>  <span>添加关注</span></a>
+  </div>
+
+            <a class="avatar" href="http://www.jianshu.com/users/0a3285018119">
+              <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/61b9815e2704.png" alt="100">
+</a>            <span class="label">
+                作者
+            </span>
+            <a class="author-name blue-link" href="http://www.jianshu.com/users/0a3285018119">
+              <span>路遥</span>
+</a>              <span data-toggle="tooltip" data-original-title="最后编辑于 2016.02.18 12:34">2016.02.04 00:05*</span>
+            <div>
+              <span>写了13817字</span>，<span>被17人关注</span>，<span>获得了18个喜欢</span>
+            </div>
+          </div>
+          <h1 class="title">Ubuntu 下安装oh-my-zsh</h1>
+          <div class="meta-top">
+            <span class="wordage">字数467</span>
+            <span class="views-count">阅读1766</span>
+            <span class="comments-count">评论0</span>
+            <span class="likes-count">喜欢2</span>
+          </div>
+
+          <!-- Collection/Bookmark/Share for width under 768px -->
+          <div class="article-share"><a class="bookmark" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in"> <i class="fa fa-bookmark-o"></i><span>收藏文章</span></a><span> <a href="javascript:void(null)" data-toggle="dropdown"><i class="fa fa-share-square-o"></i> 分享</a> <ul class="dropdown-menu arrow-top"> <li> <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/2961674/weibo/image_93c806d0c747.jpg&#39;, &#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/weibo.png"> </a> </li> <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;title=&#39;+e(&#39;Ubuntu 下安装oh-my-zsh&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/douban.png"> </a> </li> <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》（ 分享自 @jianshuio ）&#39;),x=function(){if(!window.open(r,&#39;tweibo&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/tweibo.png"> </a> </li> <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/qzone.png"> </a> </li> <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/twitter.png"> </a> </li> <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/9a5c4cb0452d&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/facebook.png"> </a> </li> <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/google_plus.png"> </a> </li> <li> <a href="http://www.jianshu.com/p/9a5c4cb0452d"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/renren.png"> </a> </li> </ul></span></div>
+          <!-- -->
+
+          <div class="show-content"><h3>默认状况下Termial样式</h3>
+<p>Ubuntu系统默认状况下的终端样式如下：</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-9f585ef87e5ec8c4.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-9f585ef87e5ec8c4.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">Ubuntu default terminal's style</div>
+</div>
+<p>有个知名的神奇：Oh-My-Zsh 可以让终端及美观又实用：</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-f916f702805fa8f8.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-f916f702805fa8f8.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">Oh-My-Zsh agnoster theme install powerline font</div>
+</div>
+<p>今天就一步步的记录我安装Oh My Zsh 的过程</p>
+<h3>安装Oh-My-Zsh</h3>
+<p>安装Oh-My-Zsh之前必须安装zsh，否则会收到如下提示：</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-cbc6ae2bb596636e.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-cbc6ae2bb596636e.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">Zsh is not installed! Please install zsh first!</div>
+</div>
+<h4>安装zsh：</h4>
+<ol>
+<li>
+<code>sudo apt-get install zsh</code>安装zsh</li>
+<li>
+<code>zsh --version</code>确认是否安装成功</li>
+<li>
+<code>sudo chsh -s $(which zsh)</code>设置zsh为默认shell</li>
+<li>注销重新登录</li>
+</ol>
+<p>设置完成之后，终端变成如下样式：</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-7ba784779a598ebe.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-7ba784779a598ebe.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">ubuntu zsh style</div>
+</div>
+<ol>
+<li>
+<code>echo $SHELL</code>确认zsh是否是默认SHELL，输出<code>/usr/bin/zsh</code>
+</li>
+</ol>
+<h4>安装Oh-My-Zsh</h4>
+<ol>
+<li>使用curl方式安装：</li>
+</ol>
+<pre class="hljs bash"><code class="bash">sh -c <span class="hljs-string">"<span class="hljs-variable">$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></code></pre>
+<ol>
+<li>默认安装完成Oh-My-Zsh的样式如下：（重启终端后有效）</li>
+</ol>
+<p>![First install Oh-My-Zsh UI(<a href="http://upload-images.jianshu.io/upload_images/76130-3f819dc30c3f65c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" target="_blank">http://upload-images.jianshu.io/upload_images/76130-3f819dc30c3f65c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</a>)</p>
+<ol>
+<li>
+<p>Oh-My-Zsh的默认配置文件在：<code>~/.zshrc</code></p>
+</li>
+<li>
+<p>编辑<code>~/.zshrc</code>修改主题为：agnoster，效果：</p>
+</li>
+</ol>
+<p>修改：</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-da7284256a1b6912.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-da7284256a1b6912.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">Oh-My-Zsh agnoster theme configuration</div>
+</div>
+<p>修改后：</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-e09bd00edd43017d.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-e09bd00edd43017d.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">Oh-My-Zsh agnoster theme example</div>
+</div>
+<h4>修改Oh-My-Zsh agnoster匹配字体</h4>
+<p>从上图我们可以明显的发现，显示效果中有乱码，这是因为字体没适配。我们需要下载支持Powerline的字体。</p>
+<ul>
+<li>下载地址：<a href="https://github.com/powerline/fonts" target="_blank">https://github.com/powerline/fonts</a>
+</li>
+<li>下载完成双击安装</li>
+</ul>
+<p>默认Ubuntu 终端使用的是 Ubuntu mono regular字体 13字号，体会成Ubuntu Mono derivative Powerline字体后，效果如下：</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-9007771f3a1bdc95.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-9007771f3a1bdc95.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">Oh-My-Zsh agnoster theme install powerline font</div>
+</div>
+<h4>进一步优化</h4>
+<p>精简 user@hostname：添加<code>export DEFAULT_USRT="username"</code>到<code>~/.zshrc</code>中，可以隐藏固定的 user@hostname 信息。</p>
+<div class="image-package imagebubble" widget="ImageBubble">
+<img src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-c5a2d079437267d2.png" data-original-src="http://upload-images.jianshu.io/upload_images/76130-c5a2d079437267d2.png?imageMogr2/auto-orient/strip%7CimageView2/2" class="imagebubble-image"><br><div class="image-caption">hide username and hostname</div>
+</div>
+<blockquote><p>同步发表在个人博客：<a href="http://www.rqc.im/ubuntu-install-oh-my-zsh/" target="_blank">http://www.rqc.im</a></p></blockquote>
+</div>
+        </div>
+      </div>
+
+      <div class="visitor_edit">
+        <!-- further readings -->
+        <div id="further-readings" data-user-slug="" data-user-nickname="">
+          <div id="further-reading-line" class="hide further-reading-line"></div>
+          <ul id="further-readings-list" class="reading-list unstyled"></ul>
+          <div id="further-reading-new" class="reading-edit">
+              <a data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+                <i class="fa fa-plus-circle"></i> 推荐拓展阅读
+</a>            <div id="further-reading-form"></div>
+          </div>
+        </div>
+        <div class="pull-right">
+          <!-- copyright -->
+          <div class="author-copyright pull-right" data-toggle="tooltip" data-html="true" title="" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
+            <a><i class="fa fa-copyright"></i> 著作权归作者所有</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reward / Support Author -->
+        <div class="support-author">
+          <p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p>
+            <a class="btn btn-pay" data-toggle="modal" href="http://www.jianshu.com/p/9a5c4cb0452d#pay-modal">¥ 打赏支持</a>
+          <div class="avatar-list"></div>
+        </div>
+
+      <!-- article meta bottom -->
+      <div class="meta-bottom clearfix">
+        <!--  Like Button -->
+        <div class="like ">
+            <div class="like-button">
+              <a id="like-note" class="like-content" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+                <i class="fa fa-heart-o"></i>  喜欢
+</a></div>          <span id="likes-count" data-toggle="tooltip" data-placement="right" title="" data-original-title="查看所有喜欢的用户">2</span>        </div>
+        <!--  share group -->
+        <div class="share-group pull-right">
+          <a href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/2961674/weibo/image_93c806d0c747.jpg&#39;, &#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-name="weibo">
+            <i class="fa fa-weibo"></i><span>分享到微博</span>
+          </a>
+          <a data-toggle="modal" href="http://www.jianshu.com/p/9a5c4cb0452d#share-weixin-modal" data-name="weixin">
+            <i class="fa fa-weixin"></i><span>分享到微信</span>
+          </a>
+          <div class="more">
+            <a href="javascript:void(0)" data-toggle="dropdown">更多分享<i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu arrow-top">
+                <li><a href="http://cwb.assets.jianshu.io/notes/images/2961674/weibo/image_93c806d0c747.jpg" target="_blank" data-name="changweibo"><i class="fa fa-arrow-circle-o-down"></i> 下载长微博图片</a></li>
+                <li>
+                  <a data-name="tweibo" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://share.v.t.qq.com/index.php?c=share&amp;a=index&amp;url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》（ 分享自 @jianshuio ）&#39;),x=function(){if(!window.open(r,&#39;tweibo&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/tweibo.png" alt="Tweibo"> 分享到腾讯微博
+</a>                </li>
+                <li>
+                  <a data-name="qzone" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/qzone.png" alt="Qzone"> 分享到QQ空间
+</a>                </li>
+                <li>
+                  <a data-name="twitter" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 路遥 的文章《Ubuntu 下安装oh-my-zsh》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/twitter.png" alt="Twitter"> 分享到Twitter
+</a>                </li>
+                <li>
+                  <a data-name="facebook" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/9a5c4cb0452d&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/facebook.png" alt="Facebook"> 分享到Facebook
+</a>                </li>
+                <li>
+                  <a data-name="google_plus" href="javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();">
+                    <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/google_plus.png" alt="Google plus"> 分享到Google+
+</a>                </li>
+                <li>
+                  <a data-name="douban" href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/9a5c4cb0452d&#39;)+&#39;&amp;title=&#39;+e(&#39;Ubuntu 下安装oh-my-zsh&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()">
+                    <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/douban.png" alt="Douban"> 分享到豆瓣
+</a>                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modals -->
+      <div id="share-weixin-modal" class="modal hide fade share-weixin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body" title="http://www.jianshu.com/p/9a5c4cb0452d?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weixin">
+    <h5>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</h5>
+  <canvas width="170" height="170" style="display: none;"></canvas><img src="data:image/png;base64,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" style="display: block;"></div>
+</div>
+
+      
+      <div id="notebooks-menu" class="panel notebooks-menu arrow-top modal hide fade"><img class="loader-tiny" src="./Ubuntu 下安装oh-my-zsh - 简书_files/tiny.gif" alt="Tiny"></div>
+      <div id="collection-menu" class="panel collection-menu arrow-top modal hide fade"><img class="loader-tiny" src="./Ubuntu 下安装oh-my-zsh - 简书_files/tiny.gif" alt="Tiny"></div>
+      
+      <div id="likes-modal" class="modal modal_new support_list-modal fullscreen hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3>喜欢的用户</h3>
+      </div>
+      <div class="modal-body">
+        <ul class="unstyled users">
+        <li data-user-id="1197669"> <a class="avatar" href="http://www.jianshu.com/users/4dd29bad3497"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/4955450bb902"> </a> <a class="blue-link" href="http://www.jianshu.com/users/4dd29bad3497">flying19880517</a> <span class="time">2016.08.15 09:40</span></li><li data-user-id="1330604"> <a class="avatar" href="http://www.jianshu.com/users/9dbdfdb3d39b"> <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/6239f2795a41.jpg"> </a> <a class="blue-link" href="http://www.jianshu.com/users/9dbdfdb3d39b">xiah</a> <span class="time">2016.04.22 13:20</span></li></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Comments -->
+    <div id="comments" class="comment-list clearfix">
+        <div class="comment-head clearfix">
+          0条评论
+          <span class="order">
+            （
+            <a data-order="asc" class="active" href="javascript:void(0)">按时间正序</a>·
+            <a data-order="desc" href="javascript:void(0)">按时间倒序</a>·
+            <a data-order="likes_count" href="javascript:void(0)">按喜欢排序</a>
+            ）
+          </span>
+            <a class="goto-comment pull-right" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+              <i class="fa fa-pencil"></i>添加新评论
+</a>        </div>
+        <div id="comment-list">
+
+
+
+</div>
+          <p class="signout-comment">
+    <a class="btn btn-info" data-signin-link="true" data-toggle="modal" href="http://www.jianshu.com/sign_in">
+      登录后发表评论
+</a>  </p>
+
+    </div>
+    <!-- -->
+
+  </div>
+
+  <script type="application/json" data-name="note">
+    {"id":2961674,"abbr":"默认状况下Termial样式Ubuntu系统默认状况下的终端样式如下：Ubuntudefaultterminal&#39;sstyle有个知名的神奇：Oh-My-Zsh可以让终端及美观又实用：Oh-My-Zshagnosterthemeinstallpowerlinefont今天就一步步的记录我安装OhMyZsh的过程安装Oh-My-Zsh安装Oh-My-Zsh之前必须安装zsh，否则会收到如下提示：Zshisnotinstalled!Pleaseinstallzshfirst!...","slug":"9a5c4cb0452d","url":"http://www.jianshu.com/p/9a5c4cb0452d","image_url":"http://cwb.assets.jianshu.io/notes/images/2961674/weibo/image_93c806d0c747.jpg","wordage":467,"has_further_readings":false,"views_count":1766,"likes_count":2,"comments_count":0,"rewards_total_count":0}
+  </script>
+
+  <script type="application/json" data-name="uuid">
+    {"uuid":"bc3ef17f-bbab-426c-b58a-e99ed3fb0ba1"}
+  </script>
+
+  <script type="application/json" data-name="author">
+    {"id":76130,"nickname":"路遥","slug":"0a3285018119","public_notes_count":16,"followers_count":17,"total_likes_count":18,"is_current_user":false,"is_signed_author":false}
+  </script>
+
+
+
+  <!-- Modal -->
+    <div class="modal pay-modal text-center hide fade" id="pay-modal">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <form id="new_reward" class="new_reward" target="_blank" action="http://www.jianshu.com/notes/2961674/rewards" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="2NDB+84UShHx0c1+SEDimAylbwGj6nXzg/Ana0tgYzDlHRrP/r3+MRDKPZhmDRZl6hccBRwzTQ2JUd1QBjT66g==">
+    <div class="modal-body">
+      <a href="http://www.jianshu.com/users/0a3285018119">
+        <div class="avatar"><img src="./Ubuntu 下安装oh-my-zsh - 简书_files/61b9815e2704.png" alt="100"></div>
+</a>      <p><i class="fa fa-quote-left pull-left"></i>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！<i class="fa fa-quote-right pull-right"></i></p>
+      <div class="main-inputs text-left">
+        <div class="control-group">
+          <label for="reward_amount">打赏金额</label><i class="fa fa-yen"></i>
+          <input value="2.00" type="text" name="reward[amount_in_yuan]" id="reward_amount_in_yuan">
+        </div>
+        <div class="control-group message">
+          <textarea placeholder="给Ta留言" name="reward[message]" id="reward_message"></textarea>
+        </div>
+      </div>
+      <div class="choose-pay text-left">
+        <h5>选择支付方式：</h5>
+        <div>
+          <label for="reward_channel_alipay">
+            <div class="iradio_minimal checked" style="position: relative;"><input type="radio" value="alipay" checked="checked" name="reward[channel]" id="reward_channel_alipay" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+            <span class="alipay-bg"></span>
+</label>
+          
+          <label for="reward_channel_wx_pub_qr">
+            <div class="iradio_minimal" style="position: relative;"><input type="radio" value="wx_pub_qr" name="reward[channel]" id="reward_channel_wx_pub_qr" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);"></ins></div>
+            微信支付
+</label>        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button name="button" type="submit" class="btn btn-large btn-pay">立即支付</button>
+    </div>
+</form></div>
+
+    <div class="modal success-pay text-center hide fade" id="success-pay">
+  <div class="modal-header clearfix">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+  </div>
+  <div class="modal-body">
+    <h3><i class="icon-ok"></i>打赏成功</h3>
+    <img src="./Ubuntu 下安装oh-my-zsh - 简书_files/complete-pay-25426877089eb23bd76d9d0e6aad89c1.png" alt="Complete pay">
+  </div>
+  <div class="modal-footer">
+    
+  </div>
+</div>
+
+</div>
+
+  <div class="imagebubble-backmask image-package" style="z-index: 1000;"><div class="image-caption">Ubuntu default terminal's style</div><div class="image-caption">Oh-My-Zsh agnoster theme install powerline font</div><div class="image-caption">Zsh is not installed! Please install zsh first!</div><div class="image-caption">ubuntu zsh style</div><div class="image-caption">Oh-My-Zsh agnoster theme configuration</div><div class="image-caption">Oh-My-Zsh agnoster theme example</div><div class="image-caption">Oh-My-Zsh agnoster theme install powerline font</div><div class="image-caption">hide username and hostname</div><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-f916f702805fa8f8(1).png" style="top: 743.6px; left: 451px; width: 577px; height: 175px;"><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-cbc6ae2bb596636e(1).png" style="top: 1264px; left: 429.5px; width: 620px; height: 77px;"><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-9f585ef87e5ec8c4(1).png" style="top: 337.8px; left: 429.5px; width: 620px; height: 465px;"><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-da7284256a1b6912(1).png" style="top: 2312.8px; left: 429.5px; width: 620px; height: 157px;"><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-9007771f3a1bdc95(1).png" style="top: 3075px; left: 451px; width: 577px; height: 175px;"><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-e09bd00edd43017d(1).png" style="top: 2603.4px; left: 445.5px; width: 588px; height: 138px;"><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-c5a2d079437267d2(1).png" style="top: 3432.8px; left: 437.5px; width: 604px; height: 195px;"><img class="imagebubble-ghost" src="./Ubuntu 下安装oh-my-zsh - 简书_files/76130-7ba784779a598ebe(1).png" style="top: 1699.4px; left: 429.5px; width: 620px; height: 68px;"></div></div>
+  <div id="flash" class="hide"></div>
+  
+  <div id="view-mode-modal" tabindex="-1" class="modal hide read-modal" aria-hidden="false" data-js-module="view-mode-modal">
+    <div class="btn-group change-background" data-toggle="buttons-radio">
+      <a class="btn btn-daytime active" data-mode="day" href="javascript:void(null);">
+        <i class="fa fa-sun-o"></i>
+</a>      <a class="btn btn-nighttime " data-mode="night" href="javascript:void(null);">
+        <i class="fa fa-moon-o"></i>
+</a>    </div>
+    <div class="btn-group change-font" data-toggle="buttons-radio">
+      <a class="btn font " data-font="font1" href="javascript:void(null);">宋体</a>
+      <a class="btn font hei active" data-font="font2" href="javascript:void(null);">黑体</a>
+    </div>
+    <div class="btn-group change-locale" data-toggle="buttons-radio">
+      <a class="btn font active" data-locale="zh-CN" href="javascript:void(null);">简</a>
+      <a class="btn font hei " data-locale="zh-TW" href="javascript:void(null);">繁</a>
+    </div>
+  </div>
+
+  
+
+  <script src="./Ubuntu 下安装oh-my-zsh - 简书_files/base-ded41764c207f7ff545c28c670922d25.js"></script>
+  
+  <script src="./Ubuntu 下安装oh-my-zsh - 简书_files/reading-base-0028299ec0c770293c0f07e2f338b48f.js"></script>
+  <script src="./Ubuntu 下安装oh-my-zsh - 简书_files/note_show-1805bf39f59948b52870922039360dbb.js"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35169517-1']);
+  _gaq.push(['_setCustomVar', 2, 'User Type', 'Visitor', 1 ]);
+  _gaq.push(['_trackPageview']);
+
+  
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<div style="display:none">
+  <script src="./Ubuntu 下安装oh-my-zsh - 简书_files/z_stat.php" language="JavaScript"></script><script src="./Ubuntu 下安装oh-my-zsh - 简书_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1258679142" target="_blank" title="站长统计">站长统计</a>
+</div>
+
+
+
+</body><div></div></html>

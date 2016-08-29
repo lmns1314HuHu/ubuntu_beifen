@@ -1,0 +1,5 @@
+BAIDU_SSP_define({"queryid" : "4401d4ba701586fb","tuid" : "u2708012_0","placement" : {"basic" : {"cname":"52089124_cpr","conBackEnv":1,"flowType":1,"mediumType":1,"rspFormat":1,"sellType":2,"sspId":1,"tuId":9223372032562516524,"userId":20876156}
+,"container" : {"anchoredType":1,"floated":{},"height":90,"sizeType":1,"width":640}
+,"fillstyle" : {"elements":[50],"ignoreStyleMode":2,"layout":[1,2],"styleTemplateId":[60103],"styleType":3,"txt":{"number":0}}
+,"userdefine" : "|adp=1|at=3|conBW=0|cpro_template=baiduCustNativeAD|pat=1|pih=70|piw=120|ptp=0|ptt=0|rss1=#ffffff|rss2=#000000|tft=0|titFF=微软雅黑|titFS=12|titSU=0|tlt=1|tn=baiduCustNativeAD","complement_type" : 2,"update" : "1470801340_1470801340"},"extends" : {"ssph":90,"sspw":640}
+,"pdb_deliv" : {"deliv_id" : "0","deliv_des" : {},"brandad" : 0},"order_deliv" : {"deliv_id" : "0","demand_id" : "0"},"rtb_deliv" : {"deliv_id" : "0","demand_id" : "2708012"}});
