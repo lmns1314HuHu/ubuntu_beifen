@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-siteapp"><meta http-equiv="Cache-Control" content="no-transform "> 
+<meta name="renderer" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--[if lte IE 8]><script>window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script><![endif]-->
+<title>linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://aitanlu.com/xmlrpc.php">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="爱探路 » linux-ubuntu使用shadowsocks客户端配置评论Feed" href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html/feed/">
+<link rel="stylesheet" id="crayon-css" href="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/crayon.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dmeng-base-css" href="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/dmeng-base-150921.css" type="text/css" media="all">
+<link rel="stylesheet" id="dmeng-css" href="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/dmeng-150921.css" type="text/css" media="all">
+<script src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/ca-pub-1627537731581004.js"></script><script type="text/javascript">var dmeng = {"current_page_url":"https:\/\/aitanlu.com\/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html","is_mobile":false,"ajaxurl":"https:\/\/aitanlu.com\/wp-admin\/admin-ajax.php","post_id":1135,"cpage":"","cpfuri":"https:\/\/aitanlu.com\/wp-content\/themes\/dmeng2.1\/google-code-prettify\/prettify.js","isluri":"https:\/\/aitanlu.com\/wp-content\/themes\/dmeng2.1\/js\/dmeng-slide.min.js","tracker":{"type":"single","pid":1135,"hash":"06ce740c0c674dc54dc0c0fd189a979d"},"ucenter":{"loginurl":"https:\/\/aitanlu.com\/wp-login.php?redirect_to=dmeng_current_page_url","logouturl":"https:\/\/aitanlu.com\/wp-login.php?action=logout&amp;_wpnonce=97208308fd&redirect_to=dmeng_current_page_url","text":{"message":"\u6d88\u606f","news":"\u65b0\u6d88\u606f","news_title":"\u60a8\u6709%s\u6761\u65b0\u6d88\u606f","post":"\u6587\u7ae0","comment":"\u8bc4\u8bba","like":"\u8d5e","login":"\u767b\u5f55","logout":"\u767b\u51fa","credit":"\u79ef\u5206","gift":"\u793c\u54c1"},"url_format":"https:\/\/aitanlu.com\/user\/%s\/"},"look":{"uri":"https:\/\/aitanlu.com\/wp-content\/themes\/dmeng2.1\/images\/look\/","files":{"\u5475\u5475":"hehe.gif","\u563b\u563b":"xixi.gif","\u54c8\u54c8":"haha.gif","\u53ef\u7231":"keai.gif","\u53ef\u601c":"kelian.gif","\u6316\u9f3b\u5c4e":"wabishi.gif","\u5403\u60ca":"chijing.gif","\u5bb3\u7f9e":"haixiu.gif","\u6324\u773c":"jiyan.gif","\u95ed\u5634":"bizui.gif","\u9119\u89c6":"bishi.gif","\u7231\u4f60":"aini.gif","\u6cea":"lei.gif","\u5077\u7b11":"touxiao.gif","\u4eb2\u4eb2":"qinqin.gif","\u751f\u75c5":"shengbing.gif","\u592a\u5f00\u5fc3":"taikaixin.gif","\u61d2\u5f97\u7406\u4f60":"landelini.gif","\u53f3\u54fc\u54fc":"youhengheng.gif","\u5de6\u54fc\u54fc":"zuohengheng.gif","\u5618":"xu.gif","\u8870":"shuai.gif","\u59d4\u5c48":"weiqu.gif","\u5410":"tu.gif","\u54c8\u6b20":"haqian.gif","\u62b1\u62b1":"baobao.gif","\u6012":"nu.gif","\u7591\u95ee":"yiwen.gif","\u998b\u5634":"chanzui.gif","\u62dc\u62dc":"baibai.gif","\u601d\u8003":"sikao.gif","\u6c57":"han.gif","\u56f0":"kun.gif","\u7761":"shui.gif","\u94b1":"qian.gif","\u5931\u671b":"shiwang.gif","\u9177":"ku.gif","\u8272":"se.gif","\u54fc":"heng.gif","\u9f13\u638c":"guzhang.gif","\u6655":"yun.gif","\u60b2\u4f24":"beishang.gif","\u6293\u72c2":"zhuakuang.gif","\u9ed1\u7ebf":"heixian.gif"}}}</script><script type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/aitanlu.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"\u4f7f\u7528 %s \u590d\u5236\uff0c\u4f7f\u7528 %s \u7c98\u8d34\u3002","minimize":"\u70b9\u51fb\u5c55\u5f00\u4ee3\u7801"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/crayon.min.js"></script>
+<script type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/dmeng-150921.min.js"></script>
+<link rel="https://api.w.org/" href="https://aitanlu.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aitanlu.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aitanlu.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="解决win8安装ubuntu后不能访问windows其他磁盘" href="https://aitanlu.com/win8-ubuntu-ntfsfis.html">
+<link rel="next" title="Avast成功更新的方法" href="https://aitanlu.com/avast-geng-xin-cheng-gong.html">
+<link rel="canonical" href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html">
+<link rel="shortlink" href="https://aitanlu.com/?p=1135">
+<link rel="alternate" type="application/json+oembed" href="https://aitanlu.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faitanlu.com%2Fubuntu-shadowsocks-ke-hu-duan-pei-zhi.html">
+<link rel="alternate" type="text/xml+oembed" href="https://aitanlu.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Faitanlu.com%2Fubuntu-shadowsocks-ke-hu-duan-pei-zhi.html&amp;format=xml">
+<meta name="keywords" content="linux,shadowsocks,ubuntu,vpn,搬瓦工,资源教程"><meta property="qc:admins" content="113454547416456375">
+<meta name="google-site-verification" content="YulP-iMc8nwlDf4tUj-6nNgiCJ0RkKP-xLFJeAIpNn4">
+<script async="" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1627537731581004",
+    enable_page_level_ads: true
+  });
+</script><style type="text/css">.forum-20160621134438{ height:250px;width:318px;
+}</style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f8f8fa; }
+</style>
+</head>
+<body class="post-template-default single single-post postid-1135 single-format-standard custom-background"><header id="masthead" itemscope="" itemtype="https://schema.org/WPHeader" style="height: 141px;">
+  <div class="container header-content">
+    <div class="row">
+      <div class="col-md-6 col-xs-6">
+        <div class="custom-header clearfix">
+                    <div class="header-text">
+            <div class="name">
+              <a href="https://aitanlu.com/" rel="home" id="name">爱探路</a>
+            </div>
+            <div class="description" id="desc">世界上没有难走的路</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        <!--<div class="clearfix" style="letter-spacing:1px;margin:25px 15px 10px;">-->
+        <!--  <div style="float:left">-->
+        <!--    <img src="http://s.dmeng.net/imagesCoding-48.png" width="44" height="44" style="margin:0 15px 0 0" alt="" />-->
+        <!--  </div>-->
+        <!--  <div style="line-height:20px">2.1 coming soon…</div>-->
+        <!--  <div class="small"><a href="http://www.dmeng.net/dmeng-theme-2-1.html">提建议</a> / <a href="http://www.dmeng.net/for-dmeng-2-1.html">参加众筹</a></div>-->
+        <!--</div>-->
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-default navbar-static-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".header-navbar-collapse"><span class="sr-only">切换菜单</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      </div>
+      <nav id="navbar" class="collapse navbar-collapse header-navbar-collapse" role="navigation" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+      <ul class="nav navbar-nav"><li class="menu-item"><a href="http://aitanlu.com/" itemprop="url"><span class="glyphicon glyphicon-home"></span> 首页</a></li><li class="menu-item"><a target="_blank" href="https://aitanlu.com/category/wordpress/" itemprop="url"><span class="glyphicon glyphicon-play"></span> wordpress</a></li><li class="menu-item"><a target="_blank" href="https://aitanlu.com/category/hosting-space/" itemprop="url"><span class="glyphicon glyphicon-cloud"></span> 主机空间</a></li><li class="active menu-item"><a target="_blank" href="https://aitanlu.com/category/zyjc/" itemprop="url"><span class="glyphicon glyphicon-send"></span> 资源教程</a></li><li class="menu-item"><a target="_blank" href="https://aitanlu.com/category/kjzx/" itemprop="url"><span class="glyphicon glyphicon-globe"></span> WebFun</a></li></ul><ul class="nav navbar-nav navbar-right"><li class="btn btn-default menu-item"><a target="_blank" href="https://aitanlu.com/about-this-site-legend/" itemprop="url"><span class="glyphicon glyphicon-indent-left"></span> 关于本站</a></li></ul>      </nav><!-- #navbar -->
+    </div>
+  </div>
+</header><!-- #masthead --><div id="main" class="container" role="main" itemscope="" itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+  <div class="row">
+      <article id="content" class="single col-lg-8 col-md-8" role="article" itemscope="" itemtype="http://schema.org/Article">
+  <header class="entry-header">
+    <div class="entry-location"><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://aitanlu.com/" title="爱探路" itemprop="url"><span itemprop="title">爱探路</span></a></span> › <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://aitanlu.com/" title="文章" itemprop="url"><span itemprop="title">文章</span></a></span> › <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://aitanlu.com/category/zyjc/" title="资源教程" itemprop="url"><span itemprop="title">资源教程</span></a></span> › <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">文章</span></span></div>
+    <h1 class="entry-title" itemprop="name">linux-ubuntu使用shadowsocks客户端配置</h1>
+    <div class="entry-meta"><div class="entry-set-font"><span id="set-font-small" class="disabled">A<sup>-</sup></span><span id="set-font-big">A<sup>+</sup></span></div><a href="https://aitanlu.com/author/aitanlu/" itemprop="author">北国之神</a><time class="entry-date num" title="发布于 2015-03-18 06:48:12 最后编辑于 2016-11-15 00:11:32 " datetime="2015-03-18T06:48:12+00:00" itemprop="datePublished">2015-03-18 06:48:12</time><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#comments" itemprop="discussionUrl" itemscope="" itemtype="https://schema.org/Comment"><i data-num-comments="true" class="num">63</i>条评论</a><span><i data-num-views="true" class="num">95,317</i>次浏览</span><span itemprop="keywords"><a href="https://aitanlu.com/tag/linux/" rel="tag">linux</a></span><span itemprop="keywords"><a href="https://aitanlu.com/tag/shadowsocks/" rel="tag">shadowsocks</a></span><span itemprop="keywords"><a href="https://aitanlu.com/tag/ubuntu/" rel="tag">ubuntu</a></span><span itemprop="keywords"><a href="https://aitanlu.com/tag/vpn/" rel="tag">vpn</a></span><span itemprop="keywords"><a href="https://aitanlu.com/tag/%e6%90%ac%e7%93%a6%e5%b7%a5/" rel="tag">搬瓦工</a></span></div>  </header>
+  <div class="entry-content" itemprop="articleBody">
+    <div class="article_index" data-toggle="hash"><h5>文章目录<span class="caret"></span></h5><ul><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-1">第一种</a><ul><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-2">ubuntu安装shadowsocks</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-3">启动shadowsocks</a></li></ul></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-4">第二种</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-5">配置浏览器</a><ul><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-6">安装插件</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-7">设置代理地址</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-8">设置自动切换</a></li></ul></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-9">开机后台自动运行ss</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-10">增值服务</a></li></ul></div><p>之前介绍过用<a href="http://aitanlu.com/vps-bandwagonhost-openvpn-shadowsocks-server.html">搬瓦工的vps</a>（搬瓦工不用vpn已经打不开了）轻松的搭建shadowsocks服务，也可以参考<a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html" target="_blank">linux-ubuntu下搭建shadowsocks</a>，然后在windows上和安卓手机平板等上轻松科学上网，只要下载对应的程序即可。</p>
+<p>当来到ubuntu客户端上怎么配置shadowsocks来科学上网呢？有两种方法可行</p>
+<p>1.安装shadowsocks命令行程序，配置命令。</p>
+<p>2.安装shadowsocks GUI图形界面程序，配置。</p>
+<p><span style="color: #808080;">个人推荐第一种，配置好后基本不用管。但使用的前提是你的服务端已经搭建好或者你有别人提供的SS 服务，下面我们来看怎么在乌班图ubuntu电脑上使用shadowsocks</span></p>
+<h2 id="title-1">第一种</h2>
+<h3 id="title-2">ubuntu安装shadowsocks</h3>
+<p>用PIP安装很简单，</p>
+<p><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code data-linenums="true"><span class="pln">sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> update</span><br></code></li><li class="L1"><code data-linenums="true"><span class="pln">sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install python</span><span class="pun">-</span><span class="pln">pip</span><br></code></li><li class="L2"><code data-linenums="true"><span class="pln">sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install python</span><span class="pun">-</span><span class="pln">setuptools m2crypto</span></code></li></ol></pre></p>
+<p>接着安装shadowsocks</p>
+<p><code class="prettyprint prettyprinted"><span class="pln">pip install shadowsocks</span></code></p>
+<p>如果是ubuntu16.04 直接 (16.04 里可以直接用apt 而不用 apt-get 这是一项改进）</p>
+<p><code class="prettyprint prettyprinted"><span class="pln">sudo apt install&nbsp;shadowsocks</span></code></p>
+<p>当然你在安装时候肯定有提示需要安装一些依赖比如python-setuptools m2crypto ，依照提示安装然后再安装就好。也可以网上搜索有很多教程的。</p>
+<h3 id="title-3">启动shadowsocks</h3>
+<p>安装好后，在本地我们要用到sslocal ，终端输入sslocal --help 可以查看帮助，像这样</p>
+<p><img class="aligncenter" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/sslocal.png" alt="sslocal"></p>
+<p>通过帮助提示我们知道各个参数怎么配置，比如 sslocal -c 后面加上我们的json配置文件，或者像下面这样直接命令参数写上运行。</p>
+<p>比如 sslocal -s 11.22.33.44 -p 50003 -k "123456"&nbsp;-l 1080 -t 600 -m&nbsp;aes-256-cfb</p>
+<p><span style="color: #808080;">-s表示服务IP, -p指的是服务端的端口，-l是本地端口默认是1080, -k 是密码（要加""）, -t超时默认300,-m是加密方法默认aes-256-cfb，</span></p>
+<p><strong>为了方便我推荐直接用sslcoal -c 配置文件路径 这样的方式，简单好用。</strong></p>
+<p>我们可以在/home/mudao/ 下新建个文件shadowsocks.json &nbsp;(mudao是我在我电脑上的用户名，这里路径你自己看你的)。内容是这样：</p>
+<p><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code data-linenums="true"><span class="pun">{</span><br></code></li><li class="L1"><code data-linenums="true"><span class="str">"server"</span><span class="pun">:</span><span class="str">"11.22.33.44"</span><span class="pun">,</span><br></code></li><li class="L2"><code data-linenums="true"><span class="str">"server_port"</span><span class="pun">:</span><span class="lit">50003</span><span class="pun">,</span><br></code></li><li class="L3"><code data-linenums="true"><span class="str">"local_port"</span><span class="pun">:</span><span class="lit">1080</span><span class="pun">,</span><br></code></li><li class="L4"><code data-linenums="true"><span class="str">"password"</span><span class="pun">:</span><span class="str">"123456"</span><span class="pun">,</span><br></code></li><li class="L5"><code data-linenums="true"><span class="str">"timeout"</span><span class="pun">:</span><span class="lit">600</span><span class="pun">,</span><br></code></li><li class="L6"><code data-linenums="true"><span class="str">"method"</span><span class="pun">:</span><span class="str">"aes-256-cfb"</span><br></code></li><li class="L7"><code data-linenums="true"><span class="pun">}</span><br></code></li></ol></pre></p>
+<p><span style="color: #808080;">server &nbsp;你服务端的IP</span><br>
+<span style="color: #808080;">servier_port &nbsp;你服务端的端口</span><br>
+<span style="color: #808080;">local_port &nbsp;本地端口，一般默认1080</span><br>
+<span style="color: #808080;">passwd &nbsp;ss服务端设置的密码</span><br>
+<span style="color: #808080;">timeout &nbsp;超时设置 和服务端一样</span><br>
+<span style="color: #808080;">method &nbsp;加密方法 和服务端一样</span></p>
+<p>确定上面的配置文件没有问题，然后我们就可以在终端输入<span style="color: #3366ff;"> sslocal -c /home/mudao/shadowsocks.json</span> 回车运行。如果没有问题的话，下面会是这样...</p>
+<figure style="width: 591px" class="wp-caption aligncenter"><img src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/sslocal-1.png" alt="sslocal" width="591" height="108"><figcaption class="wp-caption-text"><span style="color: #999999;">（如果继续请不要关闭这个终端）</span></figcaption></figure>
+<p style="text-align: left;">如果你选择这一种请跳过第二种。你可以去系统的代理设置按照说明设置代理，但一般是全局的，然而我们访问baidu,taobao等着些网站如果用代理就有点绕了，而且还会浪费服务器流量。我们最好配置我们的浏览器让它可以自动切换，该用代理用代理该直接连接自动直接连接。所以请看配置浏览器。</p>
+<h2 id="title-4">第二种</h2>
+<p>安装GUI 图形界面程序，然后按照提示配置相对应的参数。安装教程地址：<a href="https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97" target="_blank">shadowsocks-qt5 安装指南</a></p>
+<p>在ubuntu上可以这样，通过PPA源安装，仅支持Ubuntu 14.04或更高版本。</p>
+<p><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code data-linenums="true"><span class="pln">sudo add</span><span class="pun">-</span><span class="pln">apt</span><span class="pun">-</span><span class="pln">repository ppa</span><span class="pun">:</span><span class="pln">hzwhuang</span><span class="pun">/</span><span class="pln">ss</span><span class="pun">-</span><span class="pln">qt5</span><br></code></li><li class="L1"><code data-linenums="true"><span class="pln">sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> update</span><br></code></li><li class="L2"><code data-linenums="true"><span class="pln">sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install shadowsocks</span><span class="pun">-</span><span class="pln">qt5</span></code></li></ol></pre></p>
+<p>由于是图形界面，配置和windows基本没啥差别就不赘述了。经过上面的配置，你只是启动了sslocal 但是要上网你还需要配置下浏览器到指定到代理端口比如1080才可以正式上网。</p>
+<h2 id="title-5">配置浏览器</h2>
+<p>假如你上面任选一种方式已经开始运行sslocal了，火狐那个代理插件老是订阅不了gfwlist所以配置自动模式的话不好使。这里用的是chrome，你可以在Ubuntu软件中心下载得到。</p>
+<h3 id="title-6">安装插件</h3>
+<p>我们需要给chrome安装SwitchyOmega插件，但是没有代理之前是不能从谷歌商店安装这个插件的，但是我们可以从Github上直接下载最新版&nbsp;<a title="SwitchyOmega代理插件下载chrome" href="https://github.com/FelisCatus/SwitchyOmega/releases/" target="_blank">https://github.com/FelisCatus/SwitchyOmega/releases/</a>&nbsp;（这个是chrome的）然后浏览器地址打开<span style="color: #3366ff;">chrome://extensions/</span>，将下载的插件托进去安装。</p>
+<h3 id="title-7">设置代理地址</h3>
+<p>安装好插件会自动跳到设置选项，有提示你可以跳过。左边新建情景模式-选择代理服务器-比如命名为SS（叫什么无所谓）其他默认之后创建，之后在代理协议选择SOCKS5，地址为127.0.0.1,端口默认1080 。然后保存即应用选项。</p>
+<p><img class="size-full wp-image-1607 aligncenter" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/shadowsocks-0.png" alt="shadowsocks-0" width="598" height="616"></p>
+<p><img class="size-full wp-image-1608 aligncenter" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/shadowsocks-1.png" alt="shadowsocks-1" width="1160" height="534"></p>
+<h3 id="title-8">设置自动切换</h3>
+<p>接着点击自动切换 (&nbsp;Auto switch）上面的不用管，在按照规则列表匹配请求后面选择刚才新建的SS，默认情景模式选择直接连接。点击应用选项保存。再往下规则列表设置选择AutoProxy 然后将<strong><a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" target="_blank">这个地址</a></strong>填进去，点击下面的立即更新情景模式，会有提示更新成功！</p>
+<figure id="attachment_1606" style="width: 1301px" class="wp-caption alignnone"><img class="wp-image-1606 size-full" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/shadowsocks-2.png" alt="shadowsocks-2" width="1301" height="658"><figcaption class="wp-caption-text"><span style="color: #ff0000;">sorry编辑图片时候少了一步，就是填好规则列表地址后先<span style="color: #339966;">点击立即更新情景模式</span>&nbsp;后再应用选项保存</span></figcaption></figure>
+<p><span style="color: #999999;">https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</span></p>
+<p>点击浏览器右上角的SwitchyOmega图标，下面选择自动切换，然后打开google.com试试，其他的就不在这贴图了。</p>
+<p><img class="size-full wp-image-1605 aligncenter" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/shadowsocks-3.png" alt="shadowsocks-3" width="220" height="372"></p>
+<h2 id="title-9">开机后台自动运行ss</h2>
+<p>如果你选择了第二种可以不管这个</p>
+<p>如果你上面可以代理上网了可以进行这一步，之前我让你不要关掉终端，因为关掉终端的时候代理就随着关闭了，之后你每次开机或者关掉终端之后，下次你再想用代理就要重新在终端输入这样的命令<span style="color: #3366ff;">&nbsp;sslocal &nbsp;-c /home/mudao/shadowsocks.json </span>，挺麻烦是不？</p>
+<p>我们现在可以在你的ubuntu上安装一个叫做supervisor的程序来管理你的sslocal启动。关于supervisor更多点击这</p>
+<p><code class="prettyprint prettyprinted"><span class="pln">sudo apt</span><span class="pun">-</span><span class="kwd">get</span><span class="pln"> install&nbsp;supervisor</span></code></p>
+<p>安装好后我们可以在/etc/supervisor/目录下找到supervisor.conf配置文件，我们可以用以下命令来编辑</p>
+<p><code class="prettyprint prettyprinted"><span class="pln">sudo gedit&nbsp;</span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">supervisor</span><span class="pun">/</span><span class="pln">supervisor</span><span class="pun">.</span><span class="pln">conf</span></code></p>
+<p>在这个文件的最后加上以下内容</p>
+<p><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code data-linenums="true"><span class="pun">[</span><span class="pln">program</span><span class="pun">:</span><span class="pln">shadowsocks</span><span class="pun">]</span><br></code></li><li class="L1"><code data-linenums="true"><span class="pln">command</span><span class="pun">=</span><span class="pln">sslocal </span><span class="pun">-</span><span class="pln">c </span><span class="pun">/</span><span class="pln">home</span><span class="pun">/</span><span class="pln">mudao</span><span class="pun">/</span><span class="pln">shadowsocks</span><span class="pun">.</span><span class="pln">json</span><br></code></li><li class="L2"><code data-linenums="true"><span class="pln">autostart</span><span class="pun">=</span><span class="kwd">true</span><br></code></li><li class="L3"><code data-linenums="true"><span class="pln">autorestart</span><span class="pun">=</span><span class="kwd">true</span><br></code></li><li class="L4"><code data-linenums="true"><span class="pln">user</span><span class="pun">=</span><span class="pln">root</span><br></code></li><li class="L5"><code data-linenums="true"><span class="pln">log_stderr</span><span class="pun">=</span><span class="kwd">true</span><br></code></li><li class="L6"><code data-linenums="true"><span class="pln">logfile</span><span class="pun">=</span><span class="str">/var/</span><span class="pln">log</span><span class="pun">/</span><span class="pln">shadowsocks</span><span class="pun">.</span><span class="pln">log</span></code></li></ol></pre></p>
+<p>当然在16.04里你可以直接在/etc/supervisor/conf.d/下新建个文件比如ss.conf然后加入上面内容。</p>
+<p>command = 这里json文件的路径根据你的文件路径来填写。确认无误后记得保存。sslocal 和ssserver这两个命令是被存在 /usr/local/bin/下面的，我们要拷贝一份命令文件到/bin</p>
+<p><code class="prettyprint prettyprinted"><span class="pln">&nbsp;sudo cp&nbsp;</span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="kwd">local</span><span class="pun">/</span><span class="pln">bin</span><span class="pun">/</span><span class="pln">sslocal </span><span class="pun">/</span><span class="pln">bin &nbsp;</span></code>(注意空格)</p>
+<p>注意：16.04 命令在 /usr/bin/下所以就用</p>
+<p><code class="prettyprint prettyprinted"><span class="pln">sudo cp&nbsp;</span><span class="pun">/</span><span class="pln">usr</span><span class="pun">/</span><span class="pln">bin</span><span class="pun">/</span><span class="pln">sslocal </span><span class="pun">/</span><span class="pln">bin &nbsp;</span></code>(注意空格)</p>
+<p>现在关掉你之前运行sslocal命令的终端，再打开终端输入<span style="color: #3366ff;">sudo service&nbsp;supervisor restart</span>&nbsp;然后去打开浏览器看看可不可以继续代理上网。你也可以用<span style="color: #3366ff;">ps -ef|grep sslocal</span>命令查看sslocal是否在运行。</p>
+<p>这个时候我们需要在/etc下编辑一个叫rc.local的文件<span style="letter-spacing: 0.05em; line-height: 1.85;">&nbsp;，让supervisor开机启动。</span></p>
+<p><code class="prettyprint prettyprinted"><span class="pln">sudo gedit </span><span class="pun">/</span><span class="pln">etc</span><span class="pun">/</span><span class="pln">rc</span><span class="pun">.</span><span class="kwd">local</span><span class="pln">&nbsp;</span></code></p>
+<p>在这个配置文件的<span style="color: #3366ff;">exit 0</span>前面一行加上 <span style="color: #3366ff;">service supervisor start</span>&nbsp;保存。看你是否配置成功你可以在现在关机重启之后直接打开浏览器看是否代理成功。</p>
+<p style="text-align: right;">修改于：2016-04-26</p>
+<h2 id="title-10">增值服务</h2>
+<p><span style="color: #ff0000;">找不到免费的SS帐号？</span></p>
+<p><span style="color: #ff0000;">不知道那里有便宜的VPS？</span></p>
+<p><span style="color: #ff0000;">自己买了VPS但是不会搭建shadowsocks服务？</span></p>
+<p><span style="color: #ff0000;">我在手机上，电脑上，还有浏览器到底怎么设置才能666的科学上网？</span></p>
+<p><span style="color: #ff0000;">自己折腾了老半天，教程也看了很多，但就是遇到各种报错，各种这样那样的问题...</span></p>
+<p><span style="color: #3366ff;">如果你有遇到以上困惑和问题，请联系站长QQ 957473256 远程一对一增值服务帮你解答，保证你可以很顺溜的使用shadowsocks服务。</span></p>
+<p><span style="color: #ff0000;">提示：一般在中午12点以后联系我，可远程安装/指导和语音交流。<a href="http://wpa.qq.com/msgrd?v=3&amp;uin=957473256&amp;site=qq&amp;menu=yes" target="_blank"><img title="找我就对了" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/pa" alt="找我就对了" border="0"></a></span></p>
+      </div>
+  <footer class="entry-footer">
+    <div class="entry-details" itemprop="copyrightHolder" itemtype="https://schema.org/Organization" itemscope="">
+      <details>
+        <summary>原文链接：<a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html" rel="author">linux-ubuntu使用shadowsocks客户端配置</a>，转发请注明来源！</summary>
+      </details>
+  </div>    <div class="hidden" itemprop="rating" itemscope="" itemtype="http://data-vocabulary.org/Rating"><span itemprop="average">4.8</span><span itemprop="votes">119</span><span itemprop="count">63</span></div>
+  <div class="vote-group" id="post-vote" role="group" data-vote-type="post" data-vote-id="1135">
+      <a href="javascript:;" class="up btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <i class="num">115</i></a>
+      <a href="javascript:;" class="down btn btn-default btn-lg"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <i class="num">4</i></a>
+    </div>
+      </footer>
+    <div id="comments">  <div class="text-center" id="comments-loading">
+    <div class="loading-indicator">评论加载中</div>
+  </div>
+</div>
+</article>
+    <div id="sidebar" class="col-lg-4 col-md-4" role="complementary" itemscope="" itemtype="http://schema.org/WPSideBar">
+  <aside id="search-3" class="widget clearfix widget_search"><form class="input-group" role="search" method="get" id="searchform" action="https://aitanlu.com/">
+  <span class="input-group-addon">搜索</span>
+  <input type="text" class="form-control" placeholder="请输入检索关键词…" name="s" id="s" required="">
+  <span class="input-group-btn"><button type="submit" class="btn btn-default" id="searchsubmit"><span class="glyphicon glyphicon-search"></span></button></span>
+</form></aside><aside id="text-10" class="widget clearfix widget_text"><h3 class="widget-title">VPS优惠</h3>			<div class="textwidget"><p><a href="https://aitanlu.com/go/bandwagonhost/" target="_blank"><img class="wp-image-1855 size-full" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/bandwagonhost001.png" alt="搬瓦工主机" width="318" height="60"></a><a href="https://aitanlu.com/go/linode/" target="_blank"><img class="aligncenter wp-image-1860 size-full" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/linode002.png" alt="linode机房" width="318" height="60"></a><a href="https://aitanlu.com/go/hshost/" target="_blank"><img class="wp-image-1859 size-full" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/HS002.png" alt="HS-hostspace机房" width="318" height="60"></a></p>
+</div>
+		</aside><aside id="text-11" class="widget clearfix widget_text"><h3 class="widget-title">在线或远程帮助</h3>			<div class="textwidget"><p><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=959473256&amp;site=aitanlu.com&amp;menu=yes" target="_blank"><img class="alignnone wp-image-1862 size-full" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/onlinde-service.png" alt="在线服务帮助" width="318" height="200"></a></p>
+<p style="text-align: center;"><span style="color: #3366ff;">免费一枚私用SS帐号</span><span style="color: #3366ff;">仅供购买搬瓦工使用</span><br>
+<span style="color: #ff0000;">扫一下二维码即可得到IP、端口以及密码</span></p>
+<p style="text-align: center;"><a class="dmengl2v" href="https://aitanlu.com/wp-login.php">[此处内容登录可见]</a></p>
+</div>
+		</aside><aside id="recent-comments-2" class="widget clearfix widget_recent_comments"><h3 class="widget-title">一些童鞋牛评</h3><div class="comments-list"><a href="https://aitanlu.com/hs-host-hostspace.html/#comment-3965"><div class="clearfix"><div class="comment-info">三五豪侠传发表在《什么是HS机房(hostspace)以及购买》</div></div><div class="comment-content">拜读大侠博客，感悟人生道理！</div></a><a href="https://aitanlu.com/andriod-run-linux-ubuntu-1204.html/#comment-3964"><div class="clearfix"><div class="comment-info">就发表在《安卓安装并运行Linux-Ubuntu12.04系统》</div></div><div class="comment-content">在进行sh ubuntu.sh后出现can't open ubun…</div></a><a href="https://aitanlu.com/hs-host-hostspace.html/#comment-3963"><div class="clearfix"><div class="comment-info">夏日草博客发表在《什么是HS机房(hostspace)以及购买》</div></div><div class="comment-content">香港机房的速度还是可以的。</div></a><a href="https://aitanlu.com/about-this-site-legend/#comment-3962"><div class="clearfix"><div class="comment-info">森纯博客发表在《关于本站》</div></div><div class="comment-content">新年快乐</div></a><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html/#comment-3961"><div class="clearfix"><div class="comment-info">wnma发表在《linux-ubuntu使用shadowsocks客户端配置》</div></div><div class="comment-content">楼主您好，整篇文章使我受益匪浅，但是文章中有一点小瑕疵。在安装supervi…</div></a><a href="https://aitanlu.com/hs-host-hostspace.html/#comment-3960"><div class="clearfix"><div class="comment-info">三五营销发表在《什么是HS机房(hostspace)以及购买》</div></div><div class="comment-content">需要向博主学习的地方还有很多，很多，很多……</div></a></div></aside><aside id="text-9" class="widget clearfix widget_text"><h3 class="widget-title">恒创主机</h3>			<div class="textwidget"><div class="forum-20160621134438"><script charset="utf-8" language="JavaScript" type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/forum-20160621134438.js"></script><script charset="utf-8" language="JavaScript" type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/thread-20160621134416.js"></script><a href="http://www.henghost.com/deli-xinyunhost.shtml" target="_blank" title="恒创">
+<img src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/20170103145113.gif" border="0" width="318" height="250">
+</a><script charset="utf-8" language="JavaScript" type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/counter.js"></script></div>
+<p><script language="javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/getJScode.asp"></script></p>
+</div>
+		</aside>		<aside id="recent-posts-2" class="widget clearfix widget_recent_entries static" data-offset-top="1916.3333740234375" style="width: 318.333px;">		<h3 class="widget-title">近期文章</h3>		<ul>
+					<li>
+				<a href="https://aitanlu.com/hs-host-hostspace.html">什么是HS机房(hostspace)以及购买</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/linux-ubuntu-install-shadowsocks.html">linux-ubuntu下安装Shadowsocks服务</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/wordpress-theme-blog-akina.html">精致强大免费WordPress博客主题Akina</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/bandwagonhost-20g-promo-v3-phoenix-az.html">搬瓦工Bandwagonhost最新1核1G内存20GSSD和每月流量2000GB仅18.99刀/年</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/latest-bitcoin-research-bitcoin-economy-has-matured.html">最新比特币研究：比特币经济已经成熟</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/henghostcom-southwest-data-center-on-line.html">国内主机恒创科技西南大数据中心节点上线</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/has-been-deleted-videostudio-related-content.html">已全面删除会声会影相关内容</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/android-phone-install-linux-deploy-linux-kali-ubuntu-debian-etc.html">Android安卓手机用Linux Deploy安装linux-kali、ubuntu、debian等Linux发行版系统</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/free-open-source-cross-platform-c-c-php-and-nodejs-ide-codelite-zh_cn.html">自由开源跨平台C/C++和PHP及Nodejs·IDE·CodeLite安装及中文包</a>
+						</li>
+					<li>
+				<a href="https://aitanlu.com/ubuntu-vps-pptp-vpn-server.html">ubuntu·vps下如何搭建一个PPTP·vpn服务</a>
+						</li>
+				</ul>
+		</aside>		</div><!-- #sidebar -->
+  </div>
+ </div><ins class="adsbygoogle" data-adsbygoogle-status="done" style="display: none; width: auto; height: auto;"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent"><iframe width="0" height="0" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/saved_resource.html"></iframe></ins></ins></ins><!-- #main -->
+<footer id="colophon" class="container" role="contentinfo" itemscope="" itemtype="https://schema.org/WPFooter">
+  <div class="panel panel-default text-muted">
+    <div class="panel-body"><aside id="analytics-2" class="widget clearfix footer-widget widget_analytics"><ul><li class="update">统计时间 : <time title="统计时间：2017-03-15 09:57:22 ">03-15 09:57</time></li><li title="136">文章 : 136</li><li title="5">分类 : 5</li><li title="29">标签 : 29</li><li title="992">用户 : 992</li><li title="848">评论 : 848</li><li title="260,983">浏览总数 : 260k+</li><li title="1,223">搜索次数 : 1,223</li></ul></aside><ul id="link_menu" class="breadcrumb"><li class="active"><span class="glyphicon glyphicon-list-alt"></span> 链接</li> <li class="menu-item"><a target="_blank" href="http://www.dmeng.net/" itemprop="url">多梦主题</a></li><li class="menu-item"><a target="_blank" href="https://www.baidu.com/" itemprop="url">百度</a></li><li class="menu-item"><a target="_blank" href="https://www.google.com.hk/" itemprop="url">谷歌</a></li><li class="menu-item"><a target="_blank" href="https://aitanlu.com/go/henghost/" itemprop="url">恒创科技</a></li><li class="menu-item"><a target="_blank" href="https://aitanlu.com/go/bandwagonhost/" itemprop="url">搬瓦工VPS</a></li><li class="menu-item"><a target="_blank" href="http://www.fuzhihui.cn/" itemprop="url">小F的博客</a></li><li class="menu-item"><a target="_blank" href="https://zndox.com/" itemprop="url">布袋说</a></li><li class="menu-item"><a target="_blank" href="http://www.macrr.com/" itemprop="url">闲鱼博客</a></li></ul>    </div>
+    <div class="panel-footer clearfix">
+      © 2017 <a href="https://aitanlu.com/">爱探路</a> 版权所有 <a href="http://www.miitbeian.gov.cn/" rel="nofollow" target="_blank" class="text-muted">陕ICP备14010292号</a><span class="pull-right copyright"><a target="_blank" href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html">WordPress主题</a> 源自 <a target="_blank" rel="friend" href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html">多梦</a> 创作</span>    </div>
+  </div>
+</footer>
+  <div id="float-nav" style="left: 50%; right: auto; margin-top: -129px; margin-left: 580px;">
+    <ul id="float-nav-menu"><li id="ucenterAvatar"><a id="ucenterHome" title="欢迎登录" href="https://aitanlu.com/wp-login.php?redirect_to=https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html"></a></li>
+      <li id="pageShare" title="分享">
+        <span class="glyphicon glyphicon-share"></span>
+        <div id="shareBox" class="floatBoxWrapper">
+          <div class="floatBox">
+            <div id="shareNotice" data-friend-text="已改为您的推广链接">本页二维码</div>
+            <img id="shareQrcode" class="ldbg" width="130" height="130" alt="本页二维码" data-api="//open.dmeng.net/qrcode.png?text=">
+            <a href="javascript:;" id="sharePrompt" data-notice="快捷键：同时按下 Ctrl 和 C 然后按下 Enter 即可">点击复制网址</a>
+          </div>
+        </div>
+      </li>
+            <li id="goComments" title="评论"><span class="glyphicon glyphicon-comment"></span></li>
+            <li id="goTop" style="display: none;" title="返回顶部">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+<div class="floatBoxWrapper"><div class="floatBox"><div id="nav_index" data-toggle="hash"><h5>文章目录</h5><ul><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-1">第一种</a><ul><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-2">ubuntu安装shadowsocks</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-3">启动shadowsocks</a></li></ul></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-4">第二种</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-5">配置浏览器</a><ul><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-6">安装插件</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-7">设置代理地址</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-8">设置自动切换</a></li></ul></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-9">开机后台自动运行ss</a></li><li><a href="https://aitanlu.com/ubuntu-shadowsocks-ke-hu-duan-pei-zhi.html#title-10">增值服务</a></li></ul></div></div></div>      </li>
+    </ul>
+  </div><div style="text-align:center;color:#999;font-size:12px" "class="panel-footer clearfix">
+<a href="http://aitanlu.com/sitemap.xml" target="_blank">| 谷歌虫子</a>
+<a href="http://aitanlu.com/sitemap_baidu.xml" target="_blank"> | Baidu爬虫</a>
+<a href="http://aitanlu.com/sitemap.html" target="_blank">| 百度虱子 | </a>
+<a style="color:#ff0000" href="https://aitanlu.com/go/henghost/" target="_blank"> 香港高防服务器 </a>|
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253443476'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s6.cnzz.com/z_stat.php%3Fid%3D1253443476%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1253443476"><a href="http://www.cnzz.com/stat/website.php?web_id=1253443476" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/pic.gif"></a></span><script src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/z_stat.php" type="text/javascript"></script><script src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/core.php" charset="utf-8" type="text/javascript"></script>|
+</div>
+<script type="text/javascript" src="./linux-ubuntu使用shadowsocks客户端配置 - 资源教程 - 爱探路_files/wp-embed.min.js"></script>
+
+
+<!-- Dynamic page generated in 1.116 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2017-03-15 10:43:55 -->
+
+<!-- Compression = gzip --></body><div></div></html>
